@@ -9,7 +9,7 @@ namespace CustomerMaintenance {
         public string LastName { get; set; }
         public string Email { get; set; }
 
-        public string GetDisplayText() => $"{FirstName} {LastName}, {Email}";
+        public string GetDisplayText(string sep = "\t") => $"{FirstName}{sep}{LastName}{sep}{Email}";
 
         public Customer() { }
 
