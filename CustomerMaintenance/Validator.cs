@@ -67,7 +67,7 @@ namespace CustomerMaintenance
             return msg;
         }
 
-        public static bool IsValidEmail(string value, string name)
+        public static string IsValidEmail(string value, string name)
         {
             string msg = "";
             if (value.IndexOf("@") == -1 ||
